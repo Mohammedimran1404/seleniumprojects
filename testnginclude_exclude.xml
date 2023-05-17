@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+		
+		 <class name="include_Exclude.LaunchURL">
+			 <methods>
+				 <include name="setUrl"/>
+				 <include name="getUrl"/>
+			 </methods>
+		 </class>
+		
+		<class name="include_Exclude.LoginToApplication">
+			<methods>
+				<include name="loginToApplications"/>
+				<include name="application"/>
+			</methods>
+		</class>
+		
+		
+		<class name="include_Exclude.Home">
+			<methods>
+				<exclude name="clickOnTextField"/>
+				<exclude name="ClickOnPasswordField"/>
+			</methods>
+		</class>
+		
+      <class name="include_Exclude.Logout">
+		  <methods>
+			  <include name="clickOnLogout"/>
+			  <include name="applicationGetLogout"/>
+		  </methods>
+      </class>
+         
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

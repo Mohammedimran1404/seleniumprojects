@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium Suite">
+  <test thread-count="5" name="Itextcontext Test">
+    <classes>
+      <class name="mavenEX.ItextContext"/>
+      </classes>
+      </test>
+      <test name="Rediff Test">
+		  <classes>
+      <class name="mavenEX.Rediff"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
